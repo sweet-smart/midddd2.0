@@ -1,0 +1,288 @@
+/* Font styling for Fasco title */
+.fasco-title {
+    font-family: 'Poppins', sans-serif;
+    color: #484848;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling for navigation links with increased spacing */
+.navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #484848;
+    padding: 0.5rem 1.5rem;
+    /* Increase padding for spacious links */
+    margin-right: 1rem;
+    /* Additional space between links */
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+/* Styling for Products link underline */
+.product-link {
+    position: relative;
+}
+
+.product-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #484848;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Arrow styling next to Pages link */
+.arrow {
+    font-size: 0.8rem;
+    color: #484848;
+    margin-left: 3px;
+    /* Space between text and arrow */
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .fasco-title {
+        text-align: left;
+        margin-right: auto;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+}
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Filter and Option Styling */
+.filter-option {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.filter-option:hover {
+    background-color: #f0f0f0;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.3rem;
+}
+
+/* Layout Spacing */
+.content-section {
+    margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+
+    /* Medium and Large Screens (Below 992px) */
+    .filter-option {
+        width: auto;
+        padding: 0.5rem 1rem;
+    }
+
+    .card-img-top {
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Small Screens (Below 768px) */
+    .content-section h3,
+    .content-section h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust layout to stack filters and cards vertically */
+    .content-section,
+    .card-body {
+        padding: 1rem;
+    }
+
+    /* Card images adjust in height */
+    .card-img-top {
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Extra Small Screens (Below 576px) */
+    .filter-option {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .content-section h3,
+    .content-section h4 {
+        font-size: 1rem;
+    }
+
+    .color-option {
+        width: 25px;
+        height: 25px;
+    }
+}
+       
+.card-img-top {
+    width: 100%;
+    height: auto;
+    /* Let the image height adjust naturally */
+    max-height: 400px;
+    /* Optional: Limit maximum height for very long images */
+    object-fit: contain;
+    /* Ensures the full image is shown without cropping */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #f8f8f8;
+    /* Adds a background in case image doesn't fill the width */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        max-height: 300px;
+        /* Adjust max height for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        max-height: 250px;
+        /* Further adjust for extra-small screens */
+    }
+}
+
+/* Styling for the Hero component */
+.hero-section {
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Styling for the Hero image */
+.hero-image img {
+    width: 100%;
+    max-height: 600px;
+    /* Controls image height */
+    object-fit: cover;
+    /* Ensures the image fills the area nicely */
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Styling for the Hero component */
+.hero-section {
+    padding: 2rem 0;
+    /* Padding around the Hero section */
+    margin-top: 2rem;
+    /* Margin for spacing */
+}
+
+.hero-image img {
+    width: 100%;
+    /* Full-width image */
+    max-height: 600px;
+    /* Sets a maximum height for large screens */
+    object-fit: cover;
+    /* Keeps image aspect ratio */
+    border-radius: 8px;
+    /* Rounded corners for a sleek look */
+}
